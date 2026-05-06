@@ -1,0 +1,32 @@
+# 临时下载文件
+src/tmp/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# 个人 Claude 记忆（包含用户隐私数据）
+.claude/memory/
+.claude/agent-memory/
+
+# 本地配置（包含个人设置）
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# 虚拟环境
+venv/
+.venv/
+
+# 部署输出（包含 token 等敏感信息）
+output/

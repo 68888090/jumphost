@@ -1,0 +1,17 @@
+# frps.toml - Jump Host (Server) Configuration
+# 部署到跳板机: /etc/frp/frps.toml
+
+bindPort = 7000
+auth.token = "CHANGE_ME_GENERATE_RANDOM_TOKEN"
+
+# SSH 反向隧道端口范围
+# 每台目标服务器占用一个端口，按需调整范围
+allowPorts = [
+  { start = 22001, end = 22050 }
+]
+
+# Dashboard (可选，建议仅本地监听)
+webServer.addr = "127.0.0.1"
+webServer.port = 7500
+webServer.user = "admin"
+webServer.password = "CHANGE_ME_DASHBOARD_PASSWORD"

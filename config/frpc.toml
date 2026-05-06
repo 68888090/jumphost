@@ -1,0 +1,14 @@
+# frpc.toml - Target Server (Client) Configuration
+# 部署到目标服务器: /etc/frp/frpc.toml
+# 变量: {{SERVER_NAME}}, {{SSH_PORT}}, {{REMOTE_PORT}}
+
+serverAddr = "{{JUMPHOST_IP}}"
+serverPort = 7000
+auth.token = "{{TOKEN}}"
+
+[[proxies]]
+name = "ssh_{{SERVER_NAME}}"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = {{SSH_PORT}}
+remotePort = {{REMOTE_PORT}}
