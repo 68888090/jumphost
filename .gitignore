@@ -10,12 +10,12 @@ __pycache__/
 dist/
 build/
 
-# 个人 Claude 记忆（包含用户隐私数据）
-.claude/memory/
-.claude/agent-memory/
+# Claude Code 配置（本地使用，不提交）
+CLAUDE.md
+.claude/
 
-# 本地配置（包含个人设置）
-.claude/settings.local.json
+# 问题排查手册（含个人服务器信息，本地保留）
+TROUBLESHOOTING.md
 
 # macOS
 .DS_Store

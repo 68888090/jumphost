@@ -120,7 +120,6 @@ Host dev-machine
 
 ```
 jumphost/
-├── CLAUDE.md              # Claude Code 项目说明
 ├── config/
 │   ├── frps.toml          # frp 服务端配置模板
 │   ├── frpc.toml          # frp 客户端配置模板

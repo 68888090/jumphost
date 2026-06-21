@@ -1,8 +1,8 @@
-# servers.csv - 服务器清单
+# servers.csv - 服务器清单,,,
 # 格式: server_name,ssh_local_port,remote_port,description
-# remote_port 必须在 frps allowPorts 范围内 (22001-22050)
-#
-# 示例:
+# remote_port 必须在 frps allowPorts 范围内 (22001-22050),,,
+#,,,
+# 示例:,,,
 # mysql-db,22,22001,MySQL 数据库服务器
 # web-app,22,22002,Web 应用服务器
 # dev-machine,22,22003,开发机
